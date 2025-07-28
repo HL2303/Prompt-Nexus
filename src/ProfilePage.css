@@ -1,0 +1,223 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  color: #e5e7eb;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #27272a;
+  padding-bottom: 1.5rem;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.profile-back-button {
+  background-color: #18181b;
+  color: #a1a1aa;
+  border: 1px solid #27272a;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.profile-back-button:hover {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+/* New 2-column layout */
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start; /* Align items to the top */
+}
+
+@media (min-width: 768px) {
+  .profile-layout {
+    /* Give the forms column more space */
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.profile-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f4f4f5;
+  margin-bottom: 1.5rem;
+}
+
+.detail-group {
+  margin-bottom: 1.25rem;
+}
+
+.detail-group label {
+  display: block;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+  margin-bottom: 0.25rem;
+}
+
+.detail-group p {
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+.profile-credit-count {
+  font-weight: 700;
+  color: #a78bfa;
+}
+
+.plan-name {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.plan-description {
+  font-size: 0.875rem;
+  color: #a1a1aa;
+  margin-top: 0.5rem;
+  flex-grow: 1;
+}
+
+.upgrade-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #10b981;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #059669;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #09090b;
+  border: 1px solid #3f3f46;
+  border-radius: 0.5rem;
+  color: #e5e7eb;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.profile-button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #8b5cf6;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-button:hover:not(:disabled) {
+  background-color: #7c3aed;
+}
+
+.profile-button:disabled {
+  background-color: #3f3f46;
+  cursor: not-allowed;
+}
+
+/* New divider style */
+.form-divider {
+  border: none;
+  border-top: 1px solid #27272a;
+  margin: 2rem 0;
+}
+
+
+.success-message, .error-message-profile {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.success-message {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.error-message-profile {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.profile-footer {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.profile-logout-button {
+  background: none;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.profile-logout-button:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+}
